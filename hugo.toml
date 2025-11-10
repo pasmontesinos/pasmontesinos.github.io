@@ -1,0 +1,112 @@
+# =========================
+# 📘 Blog técnico - PaperMod
+# =========================
+
+baseURL = "https://pasmontesinos.github.io/"
+languageCode = "es"
+title = "Blog de Pascual Montesinos"
+theme = "PaperMod"
+
+# Idiomas y estructura
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = false
+removePathAccents = true
+
+[pagination]
+  pagerSize = 10
+
+# -------------------------
+# 🧭 Idiomas
+# -------------------------
+[languages]
+  [languages.es]
+    languageName = "Español"
+    weight = 1
+    title = "Blog de Pascual Montesinos"
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "Pascual Montesinos' Blog"
+
+# -------------------------
+# 💡 Parámetros de PaperMod
+# -------------------------
+[params]
+  author = "Pascual Montesinos"
+  description = "Notas sobre ingeniería de software, Extreme Programming y Lean Software Development."
+  defaultTheme = "auto"        # light / dark / auto
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  comments = false
+  env = "production"           # elimina warning del modo local
+
+  # Metadatos
+  ShowDate = true
+  ShowAuthor = true
+
+  # OpenGraph / SEO
+  #images = ["images/og-default.jpg"]
+
+  # Control visual
+  hideSummary = false
+  useHLJS = false              # usa Chroma (más rápido y sin JS)
+  ShowRssButtonInSectionTermList = true
+
+# -------------------------
+# 🇬🇧 Parámetros para inglés
+# -------------------------
+[languages.en.params]
+  description = "Notes on software engineering, Extreme Programming, and Lean Software Development."
+
+# -------------------------
+# 🎨 Código y Markdown
+# -------------------------
+[markup]
+  [markup.highlight]
+    style = "github-dark"      # alternativas: "dracula", "monokai", "solarized-dark"
+    lineNumbers = true
+    noClasses = false
+
+  [markup.goldmark.renderer]
+    unsafe = true              # permite HTML dentro de markdown
+
+# -------------------------
+# 🔗 Menús
+# -------------------------
+[languages.es.menu]
+  [[languages.es.menu.main]]
+    name = "Artículos"
+    url = "/posts/"
+    weight = 1
+
+  [[languages.es.menu.main]]
+    name = "Sobre mí"
+    url = "/about/"
+    weight = 2
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+# -------------------------
+# 🔍 SEO / Sitemap / Robots
+# -------------------------
+enableRobotsTXT = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.7
+  filename = "sitemap.xml"
