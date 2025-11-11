@@ -111,3 +111,9 @@ enableRobotsTXT = true
   changefreq = "monthly"
   priority = 0.7
   filename = "sitemap.xml"
+
+# Google Analytics
+[services]
+  [services.googleAnalytics]
+    ID = G-FZ23MC55NP
+
