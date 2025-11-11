@@ -45,6 +45,7 @@ removePathAccents = true
   ShowToc = true
   comments = false
   env = "production"           # elimina warning del modo local
+  googleAnalytics = "G-FZ23MC55NP"
 
   # Metadatos
   ShowDate = true
