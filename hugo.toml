@@ -118,5 +118,4 @@ enableRobotsTXT = true
 # Google Analytics
 [services]
   [services.googleAnalytics]
-    ID = G-FZ23MC55NP
-
+    ID = "G-FZ23MC55NP"
