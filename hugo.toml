@@ -47,6 +47,9 @@ removePathAccents = true
   env = "production"           # elimina warning del modo local
   googleAnalytics = "G-FZ23MC55NP"
 
+  [params.analytics.google]
+    SiteVerificationTag = "G-FZ23MC55NP"
+
   # Metadatos
   ShowDate = true
   ShowAuthor = true
