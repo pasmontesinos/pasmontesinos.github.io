@@ -2,7 +2,7 @@
 title: "Lista de Tests como guía en AI-Assisted TDD"
 slug: "ai-assisted-tdd-lista-de-tests"
 translationKey: "ai-assisted-tdd-test-list"
-date: 2025-01-10T12:00:00+01:00
+date: 2025-11-07T08:00:00+01:00
 draft: false
 tags:
   - TDD
@@ -18,10 +18,6 @@ categories:
 description: "Cómo la lista de tests de Kent Beck cobra nueva relevancia al practicar TDD con asistentes de IA, proporcionando contexto y control durante el ciclo de desarrollo."
 author: "Pascual Montesinos"
 ---
-
-# Lista de Tests como guía en AI-Assisted TDD
-
-## Introducción
 
 La práctica de **AI-assisted TDD** (Test-Driven Development asistido por inteligencia artificial) combina los principios fundamentales del TDD con las capacidades de los modelos de lenguaje de gran escala (LLMs).  
 En este enfoque, el desarrollador colabora con un asistente de IA durante el ciclo de desarrollo, aprovechando su capacidad para generar código y mantener el flujo iterativo característico del TDD.
