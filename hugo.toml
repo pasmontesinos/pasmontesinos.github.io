@@ -46,10 +46,10 @@ removePathAccents = true
   tocopen = true
   comments = false
   env = "production"           # elimina warning del modo local
-  googleAnalytics = "G-FZ23MC55NP"
+#  googleAnalytics = "G-FZ23MC55NP"
 
-  [params.analytics.google]
-    SiteVerificationTag = "G-FZ23MC55NP"
+#  [params.analytics.google]
+#    SiteVerificationTag = "G-FZ23MC55NP"
 
   # Metadatos
   ShowDate = true
@@ -117,6 +117,6 @@ enableRobotsTXT = true
   filename = "sitemap.xml"
 
 # Google Analytics
-[services]
-  [services.googleAnalytics]
-    ID = "G-FZ23MC55NP"
+#[services]
+#  [services.googleAnalytics]
+#    ID = "G-FZ23MC55NP"
