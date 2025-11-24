@@ -2,7 +2,7 @@
 # 📘 Blog técnico - PaperMod
 # =========================
 
-baseURL = "https://pasmontesinos.github.io/"
+baseURL = "https://pasmontesinos.com/"
 languageCode = "es"
 title = "Blog de Pascual Montesinos"
 theme = "PaperMod"
