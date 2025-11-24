@@ -39,7 +39,7 @@ This separation is not arbitrary. It replicates the natural flow of pair program
 
 ## Starting with a test list
 
-Before entering the TDD cycle proper, the agent proposes a test list that we refine and that serves as a map during the development session. This practice, which I detail in [my previous post about the test list](https://pasmontesinos.github.io/posts/ai-assisted-tdd-lista-de-tests/), is fundamental to maintaining context and development direction.
+Before entering the TDD cycle proper, the agent proposes a test list that we refine and that serves as a map during the development session. This practice, which I detail in [my previous post about the test list](https://pasmontesinos.com/posts/ai-assisted-tdd-lista-de-tests/), is fundamental to maintaining context and development direction.
 
 For example, when I start implementing a product repository with Django ORM, the initial list might look like this:
 

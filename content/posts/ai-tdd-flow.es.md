@@ -39,7 +39,7 @@ Esta separación no es arbitraria. Replica el flujo natural del pair programming
 
 ## Comenzando con una lista de tests
 
-Antes de entrar en el ciclo TDD propiamente dicho, el agente me propone una lista de tests que refinamos y que sirve como mapa durante la sesión de desarrollo. Esta práctica, que detallo en [mi post anterior sobre la lista de tests](https://pasmontesinos.github.io/posts/ai-assisted-tdd-lista-de-tests/), es fundamental para mantener el contexto y la dirección del desarrollo.
+Antes de entrar en el ciclo TDD propiamente dicho, el agente me propone una lista de tests que refinamos y que sirve como mapa durante la sesión de desarrollo. Esta práctica, que detallo en [mi post anterior sobre la lista de tests](https://pasmontesinos.com/posts/ai-assisted-tdd-lista-de-tests/), es fundamental para mantener el contexto y la dirección del desarrollo.
 
 Por ejemplo, cuando empiezo a implementar un repositorio de productos con Django ORM, la lista inicial podría verse así:
 
