@@ -9,7 +9,7 @@ theme = "PaperMod"
 
 # Idiomas y estructura
 defaultContentLanguage = "es"
-defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true
 removePathAccents = true
 
 [pagination]
