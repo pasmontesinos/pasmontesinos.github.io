@@ -51,6 +51,9 @@ removePathAccents = true
   [params.analytics.google]
     SiteVerificationTag = "G-FZ23MC55NP"
 
+  [params.mermaid]
+    enable = true
+
   # Metadatos
   ShowDate = true
   ShowAuthor = true
