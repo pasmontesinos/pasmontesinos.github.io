@@ -1,34 +1,44 @@
-# Hugo + PaperMod bilingual starter (es/en)
+# Blog de Pascual Montesinos
 
-Blog técnico con soporte para español e inglés, configurado para desplegar en GitHub Pages mediante GitHub Actions.
+Notas sobre ingeniería de software, Extreme Programming y Lean Software Development, en español e inglés.
 
-## 🚀 Pasos para configurarlo
+🌐 [pasmontesinos.com](https://pasmontesinos.com)
 
-1. **Crea el repositorio**
-   - En GitHub, crea un repo llamado `blog` (puede ser privado).
+## Ejecutar en local
 
-2. **Sube este contenido**
-   - Descarga este ZIP, descomprímelo y súbelo al repo.
-   - O clónalo y haz push manualmente.
+El sitio está hecho con [Hugo](https://gohugo.io) y el tema [PaperMod](https://github.com/adityatelange/hugo-PaperMod), que se incluye como submódulo:
 
-3. **Añade el tema PaperMod**
-   ```bash
-   git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
-   git commit -m "add PaperMod theme"
-   ```
+```bash
+git submodule update --init --recursive
+hugo server -D
+```
 
-4. **Activa GitHub Pages**
-   - En tu repo → Settings → Pages → Source → selecciona **GitHub Actions**.
+El blog queda en `http://localhost:1313/`. La opción `-D` incluye los borradores.
 
-5. **Publica**
-   - Haz commit y push a `main`.
-   - GitHub Actions construirá el sitio y lo publicará en tu URL:
-     - `https://<tu-usuario>.github.io/blog/`
+## Escribir un post
 
-6. **Edita los archivos**
-   - Tus posts en `content/posts/`: usa sufijos `.es.md` y `.en.md` para el idioma.
-   - Tu página personal: `content/about.es.md` y `content/about.en.md`.
-   - Página principal: `content/_index.es.md` y `content/_index.en.md`.
-   - Ajusta `baseURL` y `title` en `hugo.toml`.
+Cada post tiene una versión por idioma en `content/posts/`:
 
-Listo 🎉
+- `AAAA-MM-DD-<slug-es>.es.md`
+- `AAAA-MM-DD-<slug-en>.en.md`
+
+Las dos versiones comparten el mismo `translationKey`, en inglés e igual al slug del fichero inglés, para que Hugo las enlace entre sí.
+
+```yaml
+---
+title: "..."
+slug: "..."
+translationKey: "..."
+date: 2026-10-13T08:00:00+02:00
+draft: true
+tags: []
+categories: []
+description: "..."
+---
+```
+
+Las imágenes van en `static/images/posts/` y se referencian como `/images/posts/<nombre>.<idioma>.svg`.
+
+## Publicar
+
+Al hacer push a `master`, el workflow `.github/workflows/deploy.yml` construye el sitio y lo despliega en GitHub Pages. Solo se publican los posts con `draft: false` y con fecha pasada.
